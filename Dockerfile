@@ -1,4 +1,4 @@
-FROM texlive/texlive:latest
+FROM docker.io/texlive/texlive:latest
 
 # System packages
 RUN apt-get update \
