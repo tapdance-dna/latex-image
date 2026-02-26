@@ -6,10 +6,6 @@ RUN apt-get update \
       git git-lfs make inkscape \
  && rm -rf /var/lib/apt/lists/*
 
-# Typst
-RUN curl -fsSL https://typst.community/typst-install/install.sh | bash \
- && mv "$HOME/.local/bin/typst" /usr/local/bin/typst
-
 # uv
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /usr/local/bin/uv
 
